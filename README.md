@@ -1,4 +1,4 @@
-#Poznańskie groby
+# Poznańskie groby
 Aplikację korzystająca z API grobów poznańskich.
 
 # Used libraries
