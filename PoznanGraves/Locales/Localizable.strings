@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  PoznanGraves
+
+  Created by Robert Ignasiak on 21.05.2017.
+  Copyright © 2017 Torianin. All rights reserved.
+*/
+
+// App
+
+"app_version" = "Wersja 0.0.1";
+"app_name" = "Poznańskie groby";
+
+
+// Grave
+
+"unknown_data_text" = "?";
+"title_activity_download" = "Pobieranie danych";

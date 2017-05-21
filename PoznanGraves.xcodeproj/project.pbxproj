@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E27103241ED0F1DC0050973F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27103231ED0F1DC0050973F /* AppDelegate.swift */; };
+		E271032B1ED0F1DC0050973F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E271032A1ED0F1DC0050973F /* Assets.xcassets */; };
+		E271032E1ED0F1DC0050973F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E271032C1ED0F1DC0050973F /* LaunchScreen.storyboard */; };
+		E271033E1ED0F9EE0050973F /* GravesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271033D1ED0F9EE0050973F /* GravesViewController.swift */; };
+		E27103411ED0FA470050973F /* GraveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27103401ED0FA470050973F /* GraveCell.swift */; };
+		E27103441ED0FC110050973F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27103431ED0FC110050973F /* UIView.swift */; };
+		E27103461ED0FECD0050973F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E27103451ED0FECD0050973F /* Localizable.strings */; };
+		E27103481ED100440050973F /* GraveDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27103471ED100440050973F /* GraveDetailsViewController.swift */; };
+		E271034A1ED1036E0050973F /* GravesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27103491ED1036E0050973F /* GravesApi.swift */; };
+		E2714FCA1ED1052D003B6626 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2714FC91ED1052D003B6626 /* Constants.swift */; };
+		E2714FCD1ED12C50003B6626 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2714FCC1ED12C50003B6626 /* ProgressHUD.swift */; };
+		E2714FD31ED1A438003B6626 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2714FCF1ED1A3F6003B6626 /* MapKit.framework */; };
+		E2714FD61ED1AA61003B6626 /* PoznanGraves.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2714FD41ED1AA61003B6626 /* PoznanGraves.xcdatamodeld */; };
+		E2B8953C1ED1B2E9002DB93C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B8953B1ED1B2E9002DB93C /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E27103201ED0F1DC0050973F /* PoznanGraves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoznanGraves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27103231ED0F1DC0050973F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E271032A1ED0F1DC0050973F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E271032D1ED0F1DC0050973F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E271032F1ED0F1DC0050973F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E271033D1ED0F9EE0050973F /* GravesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravesViewController.swift; sourceTree = "<group>"; };
+		E27103401ED0FA470050973F /* GraveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraveCell.swift; path = Views/GraveCell.swift; sourceTree = "<group>"; };
+		E27103431ED0FC110050973F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extension/UIView.swift; sourceTree = "<group>"; };
+		E27103451ED0FECD0050973F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E27103471ED100440050973F /* GraveDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraveDetailsViewController.swift; path = Views/GraveDetailsViewController.swift; sourceTree = "<group>"; };
+		E27103491ED1036E0050973F /* GravesApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravesApi.swift; sourceTree = "<group>"; };
+		E2714FC91ED1052D003B6626 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Config/Constants.swift; sourceTree = "<group>"; };
+		E2714FCC1ED12C50003B6626 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = Views/ProgressHUD.swift; sourceTree = "<group>"; };
+		E2714FCF1ED1A3F6003B6626 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E2714FD11ED1A3FD003B6626 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E2714FD51ED1AA61003B6626 /* PoznanGraves.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PoznanGraves.xcdatamodel; sourceTree = "<group>"; };
+		E2B8953B1ED1B2E9002DB93C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E2DB5B1F1ED20391005E6325 /* Grave+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Grave+CoreDataClass.swift"; path = "Models/Grave+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2DB5B201ED20391005E6325 /* Grave+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Grave+CoreDataProperties.swift"; path = "Models/Grave+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E271031D1ED0F1DB0050973F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B8953C1ED1B2E9002DB93C /* CoreData.framework in Frameworks */,
+				E2714FD31ED1A438003B6626 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E27103171ED0F1DB0050973F = {
+			isa = PBXGroup;
+			children = (
+				E2714FD41ED1AA61003B6626 /* PoznanGraves.xcdatamodeld */,
+				E27103221ED0F1DC0050973F /* PoznanGraves */,
+				E27103211ED0F1DC0050973F /* Products */,
+				E2714FCE1ED1A3F6003B6626 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E27103211ED0F1DC0050973F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E27103201ED0F1DC0050973F /* PoznanGraves.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E27103221ED0F1DC0050973F /* PoznanGraves */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB5B231ED20397005E6325 /* Model */,
+				E2714FCB1ED12C01003B6626 /* Views */,
+				E2714FC81ED104AC003B6626 /* Config */,
+				E27103421ED0FBF40050973F /* Extension */,
+				E271033A1ED0F6670050973F /* Locales */,
+				E27103231ED0F1DC0050973F /* AppDelegate.swift */,
+				E27103361ED0F5840050973F /* Networking */,
+				E27103351ED0F4DA0050973F /* ViewControllers */,
+				E271032A1ED0F1DC0050973F /* Assets.xcassets */,
+				E271032C1ED0F1DC0050973F /* LaunchScreen.storyboard */,
+				E271032F1ED0F1DC0050973F /* Info.plist */,
+			);
+			path = PoznanGraves;
+			sourceTree = "<group>";
+		};
+		E27103351ED0F4DA0050973F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E27103381ED0F5F50050973F /* Graves */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E27103361ED0F5840050973F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E27103491ED1036E0050973F /* GravesApi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E27103381ED0F5F50050973F /* Graves */ = {
+			isa = PBXGroup;
+			children = (
+				E271033F1ED0F9F20050973F /* Views */,
+				E271033D1ED0F9EE0050973F /* GravesViewController.swift */,
+			);
+			path = Graves;
+			sourceTree = "<group>";
+		};
+		E271033A1ED0F6670050973F /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+				E27103451ED0FECD0050973F /* Localizable.strings */,
+			);
+			path = Locales;
+			sourceTree = "<group>";
+		};
+		E271033F1ED0F9F20050973F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E27103401ED0FA470050973F /* GraveCell.swift */,
+				E27103471ED100440050973F /* GraveDetailsViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E27103421ED0FBF40050973F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E27103431ED0FC110050973F /* UIView.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		E2714FC81ED104AC003B6626 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E2714FC91ED1052D003B6626 /* Constants.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		E2714FCB1ED12C01003B6626 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2714FCC1ED12C50003B6626 /* ProgressHUD.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E2714FCE1ED1A3F6003B6626 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8953B1ED1B2E9002DB93C /* CoreData.framework */,
+				E2714FD11ED1A3FD003B6626 /* CoreLocation.framework */,
+				E2714FCF1ED1A3F6003B6626 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2DB5B231ED20397005E6325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB5B1F1ED20391005E6325 /* Grave+CoreDataClass.swift */,
+				E2DB5B201ED20391005E6325 /* Grave+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E271031F1ED0F1DB0050973F /* PoznanGraves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E27103321ED0F1DC0050973F /* Build configuration list for PBXNativeTarget "PoznanGraves" */;
+			buildPhases = (
+				E271031C1ED0F1DB0050973F /* Sources */,
+				E271031D1ED0F1DB0050973F /* Frameworks */,
+				E271031E1ED0F1DB0050973F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoznanGraves;
+			productName = PoznanGraves;
+			productReference = E27103201ED0F1DC0050973F /* PoznanGraves.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E27103181ED0F1DB0050973F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Torianin;
+				TargetAttributes = {
+					E271031F1ED0F1DB0050973F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PS6RWDDX97;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E271031B1ED0F1DB0050973F /* Build configuration list for PBXProject "PoznanGraves" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E27103171ED0F1DB0050973F;
+			productRefGroup = E27103211ED0F1DC0050973F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E271031F1ED0F1DB0050973F /* PoznanGraves */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E271031E1ED0F1DB0050973F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E271032E1ED0F1DC0050973F /* LaunchScreen.storyboard in Resources */,
+				E27103461ED0FECD0050973F /* Localizable.strings in Resources */,
+				E271032B1ED0F1DC0050973F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E271031C1ED0F1DB0050973F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27103441ED0FC110050973F /* UIView.swift in Sources */,
+				E271033E1ED0F9EE0050973F /* GravesViewController.swift in Sources */,
+				E2714FCD1ED12C50003B6626 /* ProgressHUD.swift in Sources */,
+				E2714FD61ED1AA61003B6626 /* PoznanGraves.xcdatamodeld in Sources */,
+				E271034A1ED1036E0050973F /* GravesApi.swift in Sources */,
+				E27103241ED0F1DC0050973F /* AppDelegate.swift in Sources */,
+				E27103481ED100440050973F /* GraveDetailsViewController.swift in Sources */,
+				E27103411ED0FA470050973F /* GraveCell.swift in Sources */,
+				E2714FCA1ED1052D003B6626 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E271032C1ED0F1DC0050973F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E271032D1ED0F1DC0050973F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E27103301ED0F1DC0050973F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E27103311ED0F1DC0050973F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E27103331ED0F1DC0050973F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = PoznanGraves/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Torianin.PoznanGraves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E27103341ED0F1DC0050973F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = PoznanGraves/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Torianin.PoznanGraves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E271031B1ED0F1DB0050973F /* Build configuration list for PBXProject "PoznanGraves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27103301ED0F1DC0050973F /* Debug */,
+				E27103311ED0F1DC0050973F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E27103321ED0F1DC0050973F /* Build configuration list for PBXNativeTarget "PoznanGraves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27103331ED0F1DC0050973F /* Debug */,
+				E27103341ED0F1DC0050973F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2714FD41ED1AA61003B6626 /* PoznanGraves.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2714FD51ED1AA61003B6626 /* PoznanGraves.xcdatamodel */,
+			);
+			currentVersion = E2714FD51ED1AA61003B6626 /* PoznanGraves.xcdatamodel */;
+			name = PoznanGraves.xcdatamodeld;
+			path = PoznanGraves/PoznanGraves.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E27103181ED0F1DB0050973F /* Project object */;
+}
